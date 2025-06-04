@@ -1,0 +1,13 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "dependencies": {
+        "terminator.js": "^0.3.7",
+      },
+    },
+  },
+  "packages": {
+    "terminator.js": ["terminator.js@0.3.7", "", { "optionalDependencies": { "terminator-darwin-arm64": "0.3.7", "terminator-darwin-x64": "0.3.7", "terminator-linux-x64-gnu": "0.3.7", "terminator-win32-x64-msvc": "0.3.7" } }, "sha512-NDJxKS/E7PROC7eV9z6MQo6R9UEEx7I8jSp8tGtfWdxz3P3pYX5cU7h/Yr+FOvKcpd1D6K2nNvkDX9D8m23M0Q=="],
+  }
+}
