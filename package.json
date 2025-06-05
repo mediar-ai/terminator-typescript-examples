@@ -1,31 +1,63 @@
 {
-  "name": "deepseek-ai-agent",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  "name": "terminator-ai-agent-examples",
+  "version": "1.0.0",
+  "description": "🤖 AI Agent with Desktop Automation Examples using Terminator.js SDK + DeepSeek-R1:1.5B",
+  "type": "module",
+  "main": "ai-agent.js",
+  "bin": {
+    "ai-agent": "./ai-agent.js"
   },
+  "scripts": {
+    "start": "node ai-agent.js",
+    "dev": "node --watch ai-agent.js",
+    "setup": "node setup.js",
+    "demo": "node demo.js",
+    "install-model": "ollama pull deepseek-r1:1.5b",
+    "check-ollama": "ollama list",
+    "test": "echo \"No tests yet - contribute some!\" && exit 0"
+  },
+  "keywords": [
+    "terminator",
+    "desktop-automation",
+    "ai",
+    "deepseek",
+    "ollama",
+    "vercel-ai-sdk",
+    "reasoning",
+    "chatbot",
+    "agent",
+    "cli",
+    "ocr",
+    "screenshot",
+    "ui-automation"
+  ],
+  "author": "AI Agent Developer",
+  "license": "MIT",
   "dependencies": {
-    "ai": "^5.0.15",
+    "ai": "^4.0.0",
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "figlet": "^1.7.0",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^10.2.2",
     "ollama-ai-provider": "^1.2.0",
-    "next": "15.1.6",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "lucide-react": "^0.469.0",
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^2.3.0"
+    "ora": "^8.1.0",
+    "terminator.js": "latest",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^8",
-    "eslint-config-next": "15.1.6",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/terminator-ai-agent-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/terminator-ai-agent-examples/issues"
+  },
+  "homepage": "https://github.com/your-username/terminator-ai-agent-examples#readme"
 }
